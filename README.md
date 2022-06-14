@@ -18,7 +18,15 @@
 
 2. How would you add the collection featured image as a banner on the collection liquid template?
 
-
+{% if home_page.featured_image %}
+<div class="collection-hero">
+        <div class="collection-hero__image ratio-container lazyload js"
+        data-bgset="{% include 'bgset', image: home_page.image %}"
+        data-sizes="auto"
+        data-parent-fit="cover"
+        style="background-image: url('{{ home_page.image | img_url: '300x300' }});"></div>
+        </div>
+{% endif %}
 
 3. Using liquid code and HTML, create a simple pagination container, "< 1 2 ... 5 >".
 

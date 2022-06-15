@@ -47,12 +47,12 @@
 
 {% for product in collections['all'].products %}
         {% if product.title == "LED Strips" %}
-        {% assign title =  product.title %}
-        {% assign id =  product.id %}
-        {% assign handle =  product.handle %}
-        {% assign price =  product.price %}
-        {% assign url =  product.url %}
-        {% assign image =  product.image %}
+            {% assign title =  product.title %}
+            {% assign id =  product.id %}
+            {% assign handle =  product.handle %}
+            {% assign price =  product.price %}
+            {% assign url =  product.url %}
+            {% assign image =  product.image %}
         {% endif %}
 {% endfor %}
 
@@ -61,3 +61,21 @@
         vegetable:carrot
         cloth:t-shirt
         denim:jeans
+
+  {% assign title = "" %}
+  {% assign id = "" %}
+  {% assign handle = "" %}
+  {% assign price = "" %}
+  {% assign url = "" %}
+  {% assign image = "" %}
+  
+  {% for product in collections['all'].products %}
+        {% if product.title == "Blue T-Shirt" %}
+          {% assign title =  product.title %}
+          {% assign id =  product.id %}
+          {% assign handle =  product.handle %}
+          {% assign price =  product.price %}
+          {% assign url =  product.url %}
+          {% assign image =  product.image %}
+        {% endif %}
+  {% endfor %}

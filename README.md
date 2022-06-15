@@ -30,10 +30,31 @@
 
 3. Using liquid code and HTML, create a simple pagination container, "< 1 2 ... 5 >".
 
-
+{% paginate collection.products by 5 %}
+  {% for product in collection.products %}
+       
+  {% endfor %}  
+{% endpaginate %}
 
 4. Using liquid code, access the product named "Blue T-Shirt". Store the id, title, handle, price, url, and image in variables.
 
+{% assign title = "" %}
+{% assign id = "" %}
+{% assign handle = "" %}
+{% assign price = "" %}
+{% assign url = "" %}
+{% assign image = "" %}
+
+{% for product in collections['all'].products %}
+        {% if product.title == "LED Strips" %}
+        {% assign title =  product.title %}
+        {% assign id =  product.id %}
+        {% assign handle =  product.handle %}
+        {% assign price =  product.price %}
+        {% assign url =  product.url %}
+        {% assign image =  product.image %}
+        {% endif %}
+{% endfor %}
 
 5. Using liquid code, create a key:value array using the list below. Loop through the array. Upon key type, store the value in a variable to be used later:
         fruit:apple

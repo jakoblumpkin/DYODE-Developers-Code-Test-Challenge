@@ -1,0 +1,43 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {font-family: 'Lato';}
+
+h1, h2, h3 {font-family: 'Pacifico';}
+
+.container {
+    width: 100%;
+    max-width: 425px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.announcement-bar {
+    height: 46px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.announcement-bar > p {
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.navbar {
+    display: flex;
+    height: 64px;
+    background-color: #10504F;
+}
+
+.vector-img {
+    margin: auto 0;
+    padding: 0 6% 0 5%;
+}
+
+.logo-img {
+    margin: 13px 0 0 0;
+}

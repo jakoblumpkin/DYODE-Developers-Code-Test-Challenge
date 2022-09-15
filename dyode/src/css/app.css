@@ -38,6 +38,91 @@ h1, h2, h3 {font-family: 'Pacifico';}
     padding: 0 6% 0 5%;
 }
 
+.vector-img:hover {
+   cursor: pointer;
+}
+
 .logo-img {
     margin: 13px 0 0 0;
 }
+
+.icon-bar {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 41%;
+    margin-right: 2%;
+}
+
+.icon-bar img:hover {
+    cursor: pointer;
+}
+
+.icon-bar img {
+    margin: 0 5%;
+}
+
+.slider1 {
+    height: 227px;
+    background-image: url("./../images/slider1.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.slider2 {
+    height: 227px;
+    background-image: url("./../images/slider2.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.slider3 {
+    height: 227px;
+    background-image: url("./../images/slider3.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.dot {
+  display: flex;
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 200px;
+  justify-content: space-around;
+}
+
+.dot div {
+  background-color: rgb(164 156 162);
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Collections {
+   width: 100%;
+}
+
+.collection-container {
+}
+.collection-top {
+   display: flex;
+   justify-content: space-between;
+}
+
+.collection-top img {
+
+}
+
+.collection-bottom {
+  margin-top: 15px;
+}
+.collection-bottom img {
+    width: 90%;
+    margin: 0 auto;
+}
+
